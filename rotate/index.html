@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS animations</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Nav -->
+    <nav class="nav">
+        <div class="cell">
+            <a class="nav-logo" href="/">
+                <img src="http://joeybonneville.com/wp-content/uploads/2015/01/header_logo.png" style="width:40%" alt="Bonneville Design | Graphics &amp; Web">
+            </a>
+            <ul class="nav navbar-nav nav-menu">
+                <li><a href="#retweets">Retweets</a></li>
+                <li><a href="#pictures">Pictures</a></li>
+                <li><a href="#event">Upcoming</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="cell well">
+            <h1 class="header-title">CSS Animations</h1>
+            <p class="header-subtitle">CSS3 baby! Anything is possible.</p>
+        </div>
+    </header>
+    <!-- Register Modal -->
+    <div class="modal-overlay"></div>
+    <div class="modal">
+        <div class="modal-header">
+            <a class="modal-close" href="#" aria-label="Close">×</a>
+            <h3>Register</h3>
+        </div>
+ <div class="modal-content">
+        <form class="form" action="">
+          <fieldset class="form-field">
+            <!-- <label class='form-label' for='type'>CC Type</label> -->
+            <select class="cs-select cs-skin-elastic" name="type">
+              <option value="option01">option01</option>
+              <option value="option02">option02</option>
+              <option value="option03">option03</option>
+            </select>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <input class="form-input" type="text" id="name">
+            <label class="form-label" for="name">Your Name</label>
+          </fieldset>
+
+          <fieldset class="form-field">
+            <input class="form-input" type="text" id="website">
+            <label class="form-label" for="website">Your Website</label>
+          </fieldset>
+
+          <div class="form-submit">
+            <input class="btn" type="Submit" value="Submit">
+          </div>
+          <img src="http://www.penguinstudies.org/wp-content/uploads/2014/09/Peng_face_no_background-e1424457804412.png" alt="penguin" id="swing">
+        </form>
+      </div>
+    </div>
+    <script src="application.min.js"></script>
+    <style>
+    .modal,
+    .modal-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal {
+        top: 50px;
+        left: 50px;
+    }
+    </style>
+    <style type="text/css">
+    .modal-close {
+        font-size: 200%;
+        right: 15px;
+        top: 0;
+        position: absolute;
+        transition: transform 2s ease-in-out;
+    }
+    .modal-close:hover {
+	transform: rotate(10turn);
+	}
+    </style>
+
+
+<style>
+.form-input + .form-label {
+  position: relative;
+  padding: 0 1em;
+  cursor: text;
+  color: #6A7989;
+  transform-origin: left center;
+  transition: color 0.5s, transform 0.3s;
+}
+
+.form-input:focus + .form-label {
+  color: #333333;
+  transform: translateY(-40px) scale(0.8);
+}
+</style>
+</body>
+
+</html>
